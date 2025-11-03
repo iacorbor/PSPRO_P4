@@ -16,3 +16,4 @@
 # Archivos de logs o temporales comunes
 *.log
 *.tmp
+/PSPRO_P4/nbproject/private/
