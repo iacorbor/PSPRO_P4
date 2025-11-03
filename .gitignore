@@ -1,0 +1,18 @@
+
+# IDE Files: NetBeans
+/build/
+/nbproject/private/
+/dist/
+
+# IDE Files: IntelliJ IDEA 
+.idea/            
+*.iml          
+*.iws
+*.ipr
+
+# Carpetas de salida  IntelliJ
+/out/              
+
+# Archivos de logs o temporales comunes
+*.log
+*.tmp
