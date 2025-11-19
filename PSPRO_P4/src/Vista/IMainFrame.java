@@ -11,9 +11,9 @@ import java.awt.event.ActionListener;
  * @author israb
  */
 public interface IMainFrame {
-     void enableMenu(boolean enable);
-     void addLoginListener(ActionListener Listener);
-     void addVerListener(ActionListener listener);
+    void enableMenu(boolean enable);
+    void addLoginListener(ActionListener Listener);
+    void addVerListener(ActionListener listener);
     void addResumenListener(ActionListener listener);
     void addSalirListener(ActionListener listener);
     void showPanel(String nombrePanel);

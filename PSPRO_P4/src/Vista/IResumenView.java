@@ -4,6 +4,9 @@
  */
 package Vista;
 
+import Modelo.Account;
+import Modelo.Client;
+
 import java.awt.event.ActionListener;
 import java.util.List;
 
@@ -13,6 +16,6 @@ import java.util.List;
  */
 public interface IResumenView {
     void addCalcularSaldoListener(ActionListener listener);
-    void setDatosCliente(Cliente cliente);
-    void setTablaCuentas(List<Cuenta> cuentas);
+    void setDatosCliente(Client cliente);
+    void setTablaCuentas(List<Account> cuentas);
 }

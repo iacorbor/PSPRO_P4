@@ -9,10 +9,10 @@ package Modelo;
  * @author israb
  */
 public interface IAccount {
-        Cuenta getFirst(int idClient);
-        Cuenta getNext();
-        Cuenta getBack();
-        Cuenta getLast();
-        void    updateBalance(float newBalance);
-        void close();
+    Account getFirst(int idClient);
+    Account getNext();
+    Account getBack();
+    Account getLast();
+    void updateBalance(float newBalance);
+    void close();
 }

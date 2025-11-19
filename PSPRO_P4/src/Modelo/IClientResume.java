@@ -9,6 +9,6 @@ package Modelo;
  * @author israb
  */
 public interface IClientResume {
-    Cliente getclient(int idClient);
+    Client getClient(int idClient);
     float calculateTotalBalance(int idClient);
 }

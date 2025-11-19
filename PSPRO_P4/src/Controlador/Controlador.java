@@ -23,7 +23,7 @@ public class Controlador {
     private IClientResume clientResumeDAO;
 
     
-    private Cliente clienteValidado;
+    private Client clienteValidado;
 
 
     public Controlador(IMainFrame mainFrame, IResumenView resumenView, IVerView verView, IAuthenticator authDAO, IAccountResume accountResumeDAO, IClientResume clientResumeDAO) 
@@ -53,11 +53,11 @@ public class Controlador {
 
         if (this.clienteValidado != null) {
             mainFrame.enableMenu(true); 
-            mainFrame.mostrarMensaje("Bienvenido, " + clienteValidado.getUsuario());
+            mainFrame.showMessage("Bienvenido, " + clienteValidado.getName());
 
             onShowResumenPanel(); 
         } else {
-            mainFrame.showErrorMessage("Error: Usuario o contraseña incorrectos.");
+            mainFrame.showErrorMessage("Error: Usuario o contraseï¿½a incorrectos.");
         }
     }
 
@@ -68,8 +68,8 @@ public class Controlador {
 
     private void onShowResumenPanel() {
 
-        Cliente cliente = clientResumeDAO.getCliente(this.clienteValidado.getNumero());
-        List<Cuenta> cuentas = accountResumeDAO.getCuentas(this.clienteValidado.getNumero());
+        Client cliente = clientResumeDAO.getClient(this.clienteValidado.getId());
+        List<Account> cuentas = accountResumeDAO.getAccounts(this.clienteValidado.getId());
 
 
         resumenView.setDatosCliente(cliente);
@@ -83,7 +83,6 @@ public class Controlador {
         this.clienteValidado = null;
         mainFrame.enableMenu(false);
         mainFrame.showPanel("Login"); 
-        mainFrame.showMessage("Sesión cerrada.");
+        mainFrame.showMessage("Sesiï¿½n cerrada.");
     }
-
 }

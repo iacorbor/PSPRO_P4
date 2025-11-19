@@ -9,5 +9,5 @@ package Modelo;
  * @author israb
  */
 public interface IAuthenticator {
-    Cliente validate(String user, String pass);
+    Client validate(String user, String pass);
 }

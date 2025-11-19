@@ -4,6 +4,10 @@
  */
 package Vista;
 
+import Modelo.Account;
+
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author israb
@@ -12,6 +16,6 @@ public interface IVerView {
     void addSiguienteListener(ActionListener listener);
     void addAnteriorListener(ActionListener listener);
     // a la espera de los botones de antonio
-    void setAccountData(Cuenta cuenta);
+    void setAccountData(Account cuenta);
     String getModifiedBalance();
 }

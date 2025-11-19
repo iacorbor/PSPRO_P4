@@ -11,5 +11,5 @@ import java.util.List;
  * @author israb
  */
 public interface IAccountResume {
-    List<Cuenta> getAccounts(int idClient);
+    List<Account> getAccounts(int idClient);
 }
